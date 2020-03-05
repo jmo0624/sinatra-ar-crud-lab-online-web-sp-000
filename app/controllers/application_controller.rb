@@ -36,7 +36,7 @@ class ApplicationController < Sinatra::Base
     old_post = Article.find(id)
     new_params[:name] = params["name"]
     new_params[:content] = params["content"]
-    
+    old_post.update new_params
     
     
 end
