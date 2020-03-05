@@ -34,6 +34,7 @@ class ApplicationController < Sinatra::Base
     id = params["id"]
     new_params = {}
     old_post = Article.find(id)
+    new_params[:name] = params("name")
     
     
 end
