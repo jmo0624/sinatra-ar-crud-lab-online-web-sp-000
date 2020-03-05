@@ -16,5 +16,5 @@ class ApplicationController < Sinatra::Base
   end
   
   get '/articles'
-    
+    @articles = Articles.all
 end
