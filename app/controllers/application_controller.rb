@@ -38,7 +38,10 @@ class ApplicationController < Sinatra::Base
     new_params[:content] = params["content"]
     old_post.update(new_params)
     
-    redirect "/articles/#id"
+    redirect "/articles/#{id}"
+    
+  end
+  
     
     
 end
