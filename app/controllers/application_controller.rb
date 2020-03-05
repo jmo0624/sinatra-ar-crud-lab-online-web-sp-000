@@ -31,6 +31,7 @@ class ApplicationController < Sinatra::Base
   end
   
   patch '/articles/:id' do
+    id = params["id"]
     
     
 end
